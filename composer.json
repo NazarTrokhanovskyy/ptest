@@ -1,0 +1,29 @@
+{
+    "name": "test/task",
+    "type": "project",
+    "description": "Test task",
+    "require": {
+        "php": "^8.3",
+        "ext-json": "*",
+        "monolog/monolog": "^3.9.0",
+        "myclabs/php-enum": "1.8.5",
+        "phpunit/phpunit": "^9.5",
+        "vlucas/phpdotenv": "v5.6.2"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "3.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/",
+            "Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
